@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and images</title>
+</head>
+<body>
+    <!-- What are tags and attribute?
+        Tags are what defines the function of your code, some examples of tags are "meta", "body", "p" etc. Whereas, attribuites are what's inside a tag that will somehow help their tags to further enhance the code, for instance "name", "content" attributes for "meta" tag -->
+        <hr>
+        <h1>Linking URLs:-</h1>
+    <p>This is "a" tag and "href" attribute, "a" tag stands for 'anchor' tag and "href" attribute stands for 'Hypertext REFerence'. This combination is used to link some specific text(can be a letter,word,line) to a specific URL, the text you want to link is writtern in "a" tag after "href" attribute whereas, the URL is writtern in "href" tag.</p>
+    <a href="https://google.com">Click here! to go to Google</a>
+    <p>For opening your href URL that you have linked from your "a" tag's text in a new tab type (target="_blank") attribute after "href" attribute like this code</p>
+    <a href="https://linkedin.com" target="_blank">Click here! to go to Linkedin</a>
+    <!-- For having multiple cursors at once press "'option'(in mac)/'alt'(in windows)" and then click on texts(while pressing "'option'(in mac)/'alt'(in windows)")  -->
+    <p>For linking your local html files with your current html file you have to type ("/Your_File.html") instead of a websites's URL, The files you have linked must be in the same folder.</p>
+    <p><a href="/day3.html" target="_blank">day 3</a> This is a local html file present in same folder</p><br>
+    <hr>
+    <h1>Linking Images:-</h1>
+    <p>This is "img" tag and "src", "alt" attribuites. "img" tag stands for 'image' and is used to link a image whereas, "src" attribute stands for 'source', in "src" attribute we enter the images's source(URL/File name with extension(only if it's in the same folder)) and "alt" attribute stands for 'Alternative Text', as the name suggests in "alt" attribute we enter text we want to appear if the image doesn't show up for ex. Loading, Error occured etc  </p>
+    <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Logo is loading">
+    <img src="day4img.jpeg" alt="File might have deleleted">
+    <p>This is a how images should appear if everything goes right</p>
+    <img src="no_image.xyz" alt="Error occured"><p>This is a how "alt" attribute's text will be appear, "alt" attribute's text is appearing because no file named (no_image.xyz) is present in same folder</p>
+    <hr>
+    <h1>Adjusting image's dimensions</h1>
+    <p>for adjusting dimensions(width,height) of our image we add "width", "height" attributes after "src" and "alt" attribuites, adding only "width" or only "height" attribute will automatically adjust the aspect ratio accordingly</p>
+    <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Logo is loading" width="50" height="75"><p>Aspect ratio of image has disturbed because we enter both width and height in incorrect proportion</p>
+    <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Logo is loading" width=75><p>Aspect ratio is maintained because we have only entered width because of which aspect ratio has adjusted itself accordingly</p>
+    <p>So, this is how we adjust our image dimensions however adjusting the dimensions of image via html is not recommended because it is mainly done in CSS which we will further study.</p>
+    <hr>
+</body>
+</html>

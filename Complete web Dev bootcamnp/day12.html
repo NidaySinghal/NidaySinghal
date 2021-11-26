@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Comforter Brush', cursive;
+            font-size: 20px;
+        }
+        .container{
+            width: 1280px;
+            height: 720px;
+            border: 5px solid hotpink;
+            background-color: indigo;
+            margin: 100px auto;
+
+        }
+        .intem{
+            border: 5px solid red;
+            margin: 10px;
+            padding: 10px;
+            background-color: hotpink;
+        }
+        #fruits{
+            float: left;
+            width: 40%;
+        }
+        #computer{
+            float: left;
+            width: 40%;
+        }
+        #stationery{
+            float: left;
+            width: 100%;
+            /* clear: left; No elements floating in left will disturb this class */
+            /* clear: right; No elements floating in left will disturb this class */
+            /* clear: both; No elements floating in left will disturb this class */
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="intem">
+            <h1>Fruits</h1>
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quia, veniam delectus sed nulla laborum quas, voluptatibus debitis nobis vitae provident ipsam consectetur laboriosam id distinctio atque eos eligendi ducimus saepe nam. Dolorem repellendus minus est dolorum ipsum fugit! Maiores quam vero incidunt esse odit! Consequatur dolores, excepturi nisi ducimus vero et rerum tenetur debitis doloribus nihil dicta beatae modi laudantium nemo, qui aut quam assumenda impedit harum fugit ad voluptas quae. Soluta placeat similique dolorem ipsum, doloribus quidem odit ea nesciunt maiores aliquam, aliquid quasi quis culpa vero unde. Aspernatur dignissimos repudiandae eveniet nam cupiditate corporis officia neque illum!.
+            </p>
+
+        </div>
+        <div id="computer" class="intem">
+            <h1>computer</h1>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quia, veniam delectus sed nulla laborum quas, voluptatibus debitis nobis vitae provident ipsam consectetur laboriosam id distinctio atque eos eligendi ducimus saepe nam. Dolorem repellendus minus est dolorum ipsum fugit! Maiores quam vero incidunt esse odit! Consequatur dolores, excepturi nisi ducimus vero et rerum tenetur debitis doloribus nihil dicta beatae modi laudantium nemo, qui aut quam assumenda impedit harum fugit ad voluptas quae. Soluta placeat similique dolorem ipsum, doloribus quidem odit ea nesciunt maiores aliquam, aliquid quasi quis culpa vero unde. Aspernatur dignissimos repudiandae eveniet nam cupiditate corporis officia neque illum!.
+            </p>
+
+        </div>
+        <div id="stationery" class="intem">
+            <h1>stationery</h1>
+            <p id="stationerypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum impedit veritatis at, minima architecto, distinctio, dolore vitae saepe officiis qui maxime odio voluptatibus non dolor. Illo, neque repellat eveniet mollitia facilis illum sunt? Eum modi commodi pariatur est cumque consequatur nihil deleniti! Molestias aspernatur ad sit aliquam libero nam necessitatibus.
+            </p>
+
+        </div>
+
+    </div>
+</body>
+</html>

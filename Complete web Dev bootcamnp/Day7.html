@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>"form" Tag:-</h1>
+    <p>As the name suggest "form" tag is used to create forms in html. You should create your forms in "form" tag instead of freely taking inputs by user via diffrent input tags which are described below because there is an attribute called "action" attribute in "form" tag which will help you submitting the data entered by user in backend file for further processing, to add data in your backend file you have to type (action="your_backend_file.xyz") in "form" tag as done below</p>
+    <h3>Taking iputs:-</h3>
+    <p>For taking iputs from user you have to type "input" tag and attributes in it according to your choice of data for example for getting a text input you have to write (type="text") attribute in input tag. There are several types of inputs as described below.</p>
+    <h3>"div" Tag:-</h3>
+    <p>"div" tag stands for 'division' tag and is used for moving on to next line, as we have discussed earlier that we shouldn't use "br" tag for moving on to next line because it is CSS's job. So, Now the question arrise that why is there a anothr that we aren't supposed to use and the answer is that "div" tag does not move to next line, "div" tag aquires the whole leftover horizontal block as one for what is in it.</p>
+    <form action="my_backend_file.xyz">
+        Name: <input type="text">
+        Surname: <input type="text">
+    </form>
+    <p>As the form shown above have Name and Surname in a same line because we did not use "div" or "br" tag</p>
+    <hr>
+    <form action="my_backend_file.xyz">
+        <div>
+            Name: <input type="text">
+        </div>
+        <div>
+            Surname: <input type="text">
+        </div>
+    </form>
+    <p>But in this form Name and Surname inputs seems to appear in two different line since we have used "div" tag in both of the inputs because of which they have aquired whole horizontal block for them.</p>
+    <hr>
+    <p>There are several types of inputs which you can access using their corresponding attributes for doig that you have to type (type="your_iput_type") in input tag. <br>You should also type another attribute after "type" attribute called "name" attribute, "name" attribute is what will appear in your backend file for corresponding inputs for example if your "input" tag says (type="Text" name="Surnames") then your backend will say 'Surnames' for these inputs  </p>
+    <form action="No_file_to_use.xyz">
+        <div>
+            Name: <input type="text" name="User's_Name">
+        </div><br>
+        <div>
+            Surname: <input type="text" name="User's_Surname">
+        </div><br>
+        <div>
+            Email: <input type="email" name="User's_Email">
+        </div><br>
+        <div>
+            Indian Residence: <input type="checkbox" name="User_is_Indian">
+        </div><hr>
+        <p>This box below is prechecked because "checked" attribute is writerned in it, "checked" attribute prechecks the "checkbox" attribute for user.</p>
+        <div>
+            Have fluency in spoken english: <input type="checkbox" name="User_is_Indian" checked>
+            <p>However, user can uncheck it by themselves.</p>
+        </div><hr>
+        <p>The input shown below is achived with the help of "radio" attribute. "radio" attribute helps you to check only one box at a time. <b>Note:</b> your "name" attribiute should be same for every radio box as done below.</p>
+        Sex: <br>
+        Male: <input type="radio" name="User_Sex"> Female: <input type="radio" name="User_Sex"><hr>
+        <p>This is "submit" attribute and as the name suggests this submits the form but instead of typing the text user will see before "input" tag you have to type that text in another attribute within "input" tag called "value" attribute, for example if you want to write 'Click here to submit!' in your submit button you will type (type="submit" value="Click here to submit!"). As used in code below.</p>
+        <input type="submit" value="Click here to submit!"><hr>
+        <p>This is "reset" attribute the function of "reset" attribute is to reset the form and this works exactly the same as "submit" attribute, also shown below.</p>
+        <input type="reset" value="Click here to reset!"><hr>
+        <h4>"textarea" tag</h4>
+        <p>"textarea" tag is a diiferent type of "input" tag that means instead of being an attribute for "input" tag "textarea" tag is a standalone tag, this tag is used for taking text inputs from user in a defined box whose dimensions(Width, Height) you can predefine by defining columns("cols") and rows("10") and users can also change accordingly example is given below.</p>
+        Specify some Reasons: <textarea name="Reasons_given_by_user" cols="30" rows="10"></textarea><hr>
+        <h4>label</h4>
+        <p>label tag helps users to select a given entrybox by clicking on a specific name for doing that you have to add an additional attribute in your "input" tag called "id" attribute and then type "for" attribute in label tag or vice versa. For example if you want that by clicking on 'Phone number' its corresponding entrybox gets selected you have to write (for="Phone_no.") in "label" tag and (id="Phone_no.") in "input" tag. As Shown in given code.</p>
+        <div>
+            <label for="Phone_no.">Phone Number: </label>
+            <input type="number" name="user_phone_no." id="Phone_no.">
+        </div><hr>
+        <h4>"select tag"</h4>
+        <p>This is "select" tag, it is used for making a selection from some predefined object listed by you in a list format as shown below, you can also preselect a specific object for user by adding "selected" attribute after the option you want to preselect.</p>
+        <label for="user_OS"></label>
+        <select name="OS of preference" id="user_OS">
+            <option value="user_os_android">Android</option>
+            <option value="user_os_linux">Linux</option>
+            <option value="user_os_macos">MacOS</option>
+            <option value="user_os_windows" selected>Windows</option>
+        </select>
+    </form>
+</body>
+
+</html>
